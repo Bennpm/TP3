@@ -27,7 +27,23 @@ body {
     width:1024px;
     height:134px;
   }
+  #u2 {
+    border-width:0px;
+    position:absolute;
+    left:98px;
+    top:125px;
+    width:526px;
+    height:74px;
+    display:flex;
+    font-family:'Castellar Bold', 'Castellar Regular', 'Castellar';
+    font-weight:700;
+    font-style:normal;
+    font-size:23px;
+    color:rgb(8, 6, 6);
+    text-align:center;
+  }
 
+  
   #base {
     position:absolute;
     z-index:0;
