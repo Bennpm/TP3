@@ -7,47 +7,44 @@
 </head>
 
 <body>
-    <div id="base" class="">
 
-        <header>
 
-            <!-- Image de la barre de recherche (Image) -->
-        <div id="u0">
-            <img id="u0_img" src="u0.jpg" />
-        </div>
+   <!-- Image de la barre de recherche (Image) -->
+   <div id="u0">
+      <img id="u0_img" src="u0.jpg" />
+  </div>
 
-        <!-- Box contenant le titre de la page -->
-        <div id="u2" class="ax_default heading_1">
-            <div id="u2_div" class=""></div>
-            <div id="u2_text" class="text ">
-                <p><span>Polytechnique Institute</span></p>
-                <p><span>of Banking</span></p>
-            </div>
-        </div>
+   <!-- Rectangle opaque superpose sur l'image de la barre de recherche -->
+   <div id="u1" class="ax_default box_3">
+    <div id="u1_div" class=""></div>
+    <div id="u1_text" class="text " style="display:none; visibility: hidden">
+    </div>
+</div>
 
-        </header>
-        
-        
+<!-- Box contenant le titre de la page -->
+<div id="u2" class="ax_default heading_1">
+  <div id="u2_div" class=""></div>
+  <div id="u2_text" class="text ">
+      <p><span>Polytechnique Institute</span></p>
+      <p><span>of Banking</span></p>
+  </div>
+</div>
 
-        <!-- Rectangle opaque superpose sur l'image de la barre de recherche -->
-        <div id="u1" class="ax_default box_3">
-            <div id="u1_div" class=""></div>
-            <div id="u1_text" class="text " style="display:none; visibility: hidden">
-            </div>
-        </div>
-
-        
+<header>
+  </header>
+ 
+    <div id="inputs">
+        <div class="input-col1">
 
         <!-- Box qui contient le texte : Cout de frabrication (/unite) -->
-      <div id="u3" class="ax_default heading_1">
-            <div id="u3_div" class=""></div>
-            <div id="u3_text" class="text ">
-              <p><span>Cout de fabrication (/unité) </span></p>
+      <div class="boites">
+            <div class="textBoites">
+              <p><span>Cout de fabrication (/unite) </span></p>
             </div>
         </div>
         
         <!-- Box qui contient le texte : Prix de vente (/unite) -->
-        <div id="u5" class="ax_default heading_1">
+        <div class="boites">
             <div id="u5_div" class=""></div>
             <div id="u5_text" class="text ">
               <p><span>Prix de vente (/unité) </span></p>
@@ -55,7 +52,7 @@
         </div>
         
         <!-- Box qui contient le texte : Marge (/unite) -->
-          <div id="u6" class="ax_default heading_1">
+          <div class="boites">
             <div id="u6_div" class=""></div>
             <div id="u6_text" class="text ">
               <p><span>Marge (/unité)</span></p>
@@ -63,12 +60,24 @@
           </div>
 
           <!-- Box qui contient le texte : Marge totale  -->
-          <div id="u7" class="ax_default heading_1">
-            <div id="u7_div" class=""></div>
+          <div class="boites">
+            <div id="u9_div" class=""></div>
             <div id="u7_text" class="text ">
               <p><span>Marge totale </span></p>
             </div>
           </div>
+
+          <!-- Text Cout (Text Field) -->
+      <div id="u9" class="ax_default text_field" data-label="Text Cout">
+        <div id="u9_div" class=""></div>
+        <input id="u9_input" type="number" value="" class="u9_input"/>
+      </div>
+
+      
+
+    </div>
+
+
 
 
 </body>

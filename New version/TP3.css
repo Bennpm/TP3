@@ -39,7 +39,7 @@ body {
     font-weight:700;
     font-style:normal;
     font-size:23px;
-    color:rgb(8, 6, 6);
+    color:rgb(0, 0, 0);
     text-align:center;
   }
 
@@ -55,3 +55,111 @@ body {
     text-transform:none;
     visibility:hidden;
   }
+
+  #u1_div {
+    border-width:0px;
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:2014px;
+    height:134px;
+    background:inherit;
+    background-color:rgba(112, 144, 158, 1);
+    border:none;
+    border-radius:0px;
+    -moz-box-shadow:8px 7px 5px rgba(0, 0, 0, 0.349019607843137);
+    -webkit-box-shadow:8px 7px 5px rgba(0, 0, 0, 0.349019607843137);
+    box-shadow:8px 7px 5px rgba(0, 0, 0, 0.349019607843137);
+  }
+
+  #u1 {
+    border-width:0px;
+    position:absolute;
+    left:-589px;
+    top:80px;
+    width:2014px;
+    height:134px;
+    display:flex;
+    opacity:0.76;
+  }
+  
+  #u9_div {
+    border-width:0px;
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:300px;
+    height:25px;
+    background:inherit;
+    background-color:rgba(255, 255, 255, 1);
+    box-sizing:border-box;
+    border-width:3px;
+    border-style:solid;
+    border-color:rgba(0, 0, 0, 1);
+    border-radius:0px;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+  }
+  #u9 {
+    border-width:0px;
+    position:absolute;
+    left:98px;
+    top:853px;
+    width:300px;
+    height:25px;
+    display:flex;
+  }
+
+  #u9_input {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:300px;
+    height:25px;
+    padding:3px 2px 3px 2px;
+    font-family:'Arial Normal', 'Arial';
+    font-weight:400;
+    font-style:normal;
+    font-size:13px;
+    letter-spacing:normal;
+    color:#000000;
+    vertical-align:none;
+    text-align:left;
+    text-transform:none;
+    background-color:transparent;
+    border-color:transparent;
+  }
+
+  .boites {
+    border-width:0px;
+    position:absolute;
+    float: left;
+    width:300px;
+    height:25px;
+    background-color:rgba(255, 255, 255, 1);
+    border-width:3px;
+    border-style:solid;
+    border-color:rgba(0, 0, 0, 1);
+    border-radius:0px;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .textBoites {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .input-col1 {
+    float: left;
+    width: 28%;
+    padding: 10px;
+}
+
+#inputs {
+  width: auto;
+}

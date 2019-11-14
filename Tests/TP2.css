@@ -1,0 +1,203 @@
+* {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            
+        }
+
+        #u0 {
+    border-width:0px;
+    position:relative;
+    width:2014px;
+    height:134px;
+    display:flex;
+    background-color:rgba(112, 144, 158, 1);
+  }
+
+  #u34 {
+    left:50px;
+    top:50px;
+    width:137px;
+    height:124px;
+  }
+
+
+
+  #u1 {
+    border-width:0px;
+    position:relative;
+    left:-589px;
+    top:80px;
+    width:2014px;
+    height:134px;
+    display:flex;
+    opacity:0.76;
+  }
+
+  #u2 {
+    border-width:0px;
+    position:absolute;
+    left:98px;
+    top:25px;
+    width:526px;
+    height:74px;
+    display:flex;
+    font-family:'Castellar Bold', 'Castellar Regular', 'Castellar';
+    font-weight:700;
+    font-style:normal;
+    font-size:23px;
+    color:rgb(255, 255, 255);
+    text-align:center;
+  }
+
+  #u31 {
+    position:relative;
+    opacity:0.65;
+    width:2014px;
+  }
+
+  #u50 {
+    text-align: center;
+  }
+
+  #u1_div {
+    border-width:0px;
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:2014px;
+    height:134px;
+    background:inherit;
+    background-color:rgba(112, 144, 158, 1);
+    border:none;
+    border-radius:0px;
+    -moz-box-shadow:8px 7px 5px rgba(0, 0, 0, 0.349019607843137);
+    -webkit-box-shadow:8px 7px 5px rgba(0, 0, 0, 0.349019607843137);
+    box-shadow:8px 7px 5px rgba(0, 0, 0, 0.349019607843137);
+  }
+
+        #output {
+            display: none;
+            width: 85%;
+            float: left;
+        }
+
+
+        footer {
+        }
+
+        select {
+            text-align-last: center;
+        }
+
+        .dropDownMenu {
+            background-color: lightgray;
+            color: black;
+            width: 100%;
+            height: 20px;
+            text-align: center;
+        }
+
+        .input-col1, .input-col2, .input-col3 {
+            float: left;
+            width: 15%;
+            padding: 5px;
+        }
+
+        #inputs {
+            width: auto;
+        }
+
+        .input-field {
+            border: 2px solid black;
+            margin-top: 10px;
+            padding: 0px;
+            text-align: center;
+        }
+
+        .elements {
+            border: 2px solid white;
+            margin-top: 10px;
+            padding: 0px;
+            text-align: center;
+        }
+
+        .company {
+            color: white;
+            text-align: center;
+        }
+
+
+
+        .alpha {
+            background-color: #7F140D;
+        }
+
+        .beta {
+            background-color: darkorange;
+        }
+
+        .gamma {
+            background-color: #ffcc33;
+        }
+
+        .epsilon {
+            background-color: #0fc0fc;
+        }
+
+        .mobile {
+            background-color: #1c2841;
+        }
+
+        .iota {
+            background-color: #69359c;
+        }
+
+        .theta {
+            background-color: #ff33cc;
+        }
+
+        .kappa {
+            background-color: black;
+        }
+
+        img {
+            width:80%;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                float: left;
+                width: 100%;
+                height: 60px;
+                background: #ccc;
+                padding: 20px;
+                position: relative;
+            }
+
+                nav ul li {
+                    display: inline;
+                }
+
+            header {
+                font-size: 20px;
+            }
+
+            footer {
+                background-color: #777;
+                padding: 10px;
+                width: 100%;
+                position: relative;
+                top: 650px;
+            }
+
+            img {
+                width:auto;
+                height:auto;
+            }
+        }
