@@ -1,0 +1,132 @@
+
+//Variable globale qui stockera tous les scénario
+var allScenario = new Array(); 
+
+//Note : vérifier si les "this" sont nécesaires ou pas, sinon les enlevés
+//Classe scénario, permet de stocker les valeurs associé à un scénario
+class Scenario {
+	constructor(nom,cout_fabrication,prix_vente,nb_vente){
+		this.nom = nom;
+		this.cout = cout_fabrication;
+		this.prix_vente = prix_vente;
+		this.nb_vente = nb_vente;
+		this.marge_unité = (prix_vente-cout_fabrication);
+		this.marge_total = this.marge_unité*nb_vente;
+	}
+	getNom(){
+		return this.nom;
+	}
+	
+	getMargeUnité(){
+		return this.marge_unité;	
+	}
+	
+	getMargeTotal() {
+		return this.marge_total;
+	}
+	
+	getCout(){
+		return this.cout_fabrication;
+	}
+	
+	getPrix(){
+		return this.prix_vente;
+	}
+	
+	getNbVentes(){
+		return this.prix_vente;
+	}
+}
+
+//Permet de crée un scénario lors du clique sur le bouton, elle doit appelée le constructeur de la classe scénario
+//ELle doit également recupérer les parmaètre des pour le constructeur des champs d'inputs
+function createScenario(){
+	//On récupère les données des inputs
+	let nom = document.getElementById("Nom").value;
+	let cout_fabrication  = document.getElementById("cout_fabrication").value;
+	let prix_vente = document.getElementById("prix_vente").value;
+	let nb_vente  = document.getElementById("nb_vente").value;
+	
+	//On clear les champs de données (on peut remplacer ca par un getElebyment by class name et utiliser le tableau) //NE pas oublier
+	document.getElementById("Nom").value = null;
+	document.getElementById("cout_fabrication").value = null;
+	document.getElementById("prix_vente").value = null;
+	document.getElementById("nb_vente").value = null;
+	
+	//On clear également les champs d'affichage de marge et marge unité
+	document.getElementById("marge").value == null;
+	document.getElementById("margeUnite").value =  null;
+	
+	//On arrange les valeurs (gestion des exceptions)
+	if(nom == null)
+		nom = "Aucun nom";
+	
+	if(cout_fabrication == null || cout_fabrication<0)
+		cout_fabrication = 0;
+	
+	if(prix_vente == null || prix_vente<0)
+		prix_vente = 0;
+	
+	if(nb_vente == null || nb_vente<0)
+		nb_vente = 0;
+	
+	let newScenario = new Scenario(nom,cout_fabrication,prix_vente,nb_vente);
+	
+	//Si un même scénario a été saisie on ne l'ajoute pas à la liste des scénario
+	for(index = 0; index < allScenario.length; index++){
+		if(newScenario.getCout() == allScenario[index].getCout() && newScenario.getPrix() == allScenario[index].getPrix()){
+			if (newScenario.getNbVentes() == allScenario[index].getNbVentes())
+				return; //Le scénario que l'on veut ajouté est deja existant, ca ne sert a rien de continuer le traitement
+		}
+	}
+	
+	allScenario.push(newScenario);
+}
+
+//Permet d'afficher la marge par unité 
+function displayMargeUnite(){
+	let cout = document.getElementById("cout_fabrication").value;
+	let prix = document.getElementById("prix_vente").value;
+	
+	// On arrange les valeurs (gestion des erreurs) 
+	if(cout == null || cout < 0)
+		cout = 0;
+	
+	if(prix ==null || prix < 0)
+		prix = 0;
+	
+	document.getElementById("margeUnite").value = (prix - cout);
+}
+
+//Permet d'afficher la marge totale
+function displayMarge(){
+	let cout = document.getElementById("cout_fabrication").value;
+	let prix = document.getElementById("prix_vente").value;
+	let nb_vente = document.getElementById("nb_vente").value;
+	
+	// On arrange les valeurs (gestion des erreurs) 
+	if(cout == null || cout < 0)
+		cout = 0;
+	
+	if(prix == null || prix < 0)
+		prix = 0;
+	
+	if(nb_vente == null || nb_vente < 0)
+		nb_vente = 0;
+	
+	document.getElementById("marge").value = nb_vente*(prix - cout);
+}
+
+//Permet de changer la couleur d'un bouton (on mouse)
+function colorChange(){
+	this.style.backgroundColor = "green";
+}
+//Permet de rétablir la couleur du bouton à son état d'origine (out mouse)
+function originalColor(){
+	this.stye.backgroundColor = "blue";
+}
+
+//Défilment de la barre défilante
+function displaysScenarioInformation(scenario){
+	//Display les infos dont on a besoin
+}
